@@ -23,7 +23,7 @@ Reddit Medic is a mini AI-powered tool that fetches top posts and comments from 
 - OpenAI API key  
 
 ### Your .env file should look like this:
-REDDIT_CLIENT_ID=YOUR_REDDIT_CLIENT_ID
-REDDIT_CLIENT_SECRET=YOUR_REDDIT_SECRET_ID
-OPENAI_API_KEY=YOUR_OPENAI_KEY
+REDDIT_CLIENT_ID=YOUR_REDDIT_CLIENT_ID <br>
+REDDIT_CLIENT_SECRET=YOUR_REDDIT_SECRET_ID <br>
+OPENAI_API_KEY=YOUR_OPENAI_KEY <br>
 
