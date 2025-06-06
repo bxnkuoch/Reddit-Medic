@@ -9,11 +9,12 @@ class RedditClient:
             user_agent="RedditInsightAgent/0.1"
         )
 
-    def fetch_posts(self, subreddit_name: str, limit: int) -> list[dict]:
+    def fetch_posts(self, subreddit_name: str, limit: int, time_filter: str = "day") -> list[dict]:
         subreddit = self.reddit.subreddit(subreddit_name)
         posts_data = []
 
-        for post in subreddit.hot(limit=limit):
+        # Use subreddit.top() to respect time_filter
+        for post in subreddit.top(limit=limit, time_filter=time_filter):
             post.comments.replace_more(limit=0)
             top_comments = "\n".join([c.body for c in post.comments[:5]])
             posts_data.append({
