@@ -51,7 +51,7 @@ python main.py
 This uses defaults:
 - `--subreddit AskDocs`
 - `--limit 5`
-- `--time_filter week`
+- `--time_filter day`
 
 To customize:
 ```bash
